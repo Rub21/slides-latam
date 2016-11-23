@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Github para equipos ágiles</title>
+    <meta name="description" content='Slides del taller "GitHub para equipos ágiles"'>
+    <meta name="author" content="Rodolfo Wilhelmy">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <div style="font-size: 80px">Improving and Validating the map every day using open source tools</div>
+          <a href="https://twitter.com/mapbox">@mapbox</a> , <a href="https://twitter.com/mapbox">@Rub21tk</a>
+        </section>
+        <section>
+          <img src="img/satellite-logo.png" style="width: 50%;background: none; border: 0" >
+        </section>
+        <section style="text-align: left">
+          <h2> OpenStreetMap Stats</h2>
+          <ul>
+            <li>Number of users : 3,206,026</li>
+            <li>Number of nodes : 3,610,420,888</li>
+            <li>Number of ways : 377,801,220</li>
+            <li>Number of relations : 4,591,863</li>
+          </ul>
+        </section>
+        <section style="text-align: left">
+          <h4>Most of the OpenStreetMap editions are really good</h4>
+          <img src="img/ayac-home.png" style="background: none; border: 0" >
+        </section>
+        <section style="text-align: left">
+          <h2>However,there are still bad editions :-(</h2>
+          <p>Most bad edits are accidental, very little intentional vandalism.</p>
+        </section>
+        <section>
+          <img src="img/e1.png" style="background: none; border: 0; " >
+          <p>A new mapper deleted existing highways</p>
+        </section>
+        <section>
+          <img src="img/e2.png" style="background: none; border: 0; width: 50%; " >
+          <p>Undocumented Imports</p>
+        </section>
+        <section>
+          <img src="img/e3.png" style="background: none; border: 0; " >
+          <p>Newbie error</p>
+        </section>
+        <section>
+          <img src="img/e4.png" style="background: none; border: 0; " >
+          <p>Cat on the map!</p>
+        </section>
+        <section>
+          <p>Disconnected highways</p>
+          <img src="img/unconnected.png" style="background: none; border: 0; " >
+        </section>
+        <section>
+          <p>Crossing highway without node</p>
+          <img src="img/crossing.png" style="background: none; border: 0; " >
+        </section>
+        <section>
+          <p>Island highways</p>
+          <img src="img/insland.png" style="background: none; border: 0; " >
+        </section>
+        <section>
+          <p>Kinks</p>
+          <img src="img/kinks.png" style="background: none; border: 0; " >
+        </section>
+        <section style="text-align: left">
+          <h2>Types of errors</h2>
+          <ul>
+            <li>Newbie errors</li>
+            <li>License violations</li>
+            <li>Accidental breakages</li>
+            <li>Intentional damage</li>
+          </ul>
+        </section>
+
+
+        <section style="text-align: left">
+          <h2>Existing Tools</h2>
+          <ul>
+            <li> HDYC: http://hdyc.neis-one.org/</li>
+            <li>License violations</li>
+            <li>Accidental breakages</li>
+            <li>Intentional damage</li>
+          </ul>
+        </section>
+
+       
+Whodidit: http://simon04.dev.openstreetmap.org/whodidit/
+Osmose: http://osmose.openstreetmap.fr/en/map/
+Keepright: http://keepright.ipax.at/
+OSM Inspector http://tools.geofabrik.de/osmi/
+
+
+        <section>
+          <h1>FIN</h1>
+        </section>
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+    // Optional reveal.js plugins
+    dependencies: [
+    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+    { src: 'plugin/zoom-js/zoom.js', async: true },
+    { src: 'plugin/notes/notes.js', async: true }
+    ]
+    });
+    </script>
+  </body>
+</html>
