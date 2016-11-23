@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Github para equipos ágiles</title>
-    <meta name="description" content='Slides del taller "GitHub para equipos ágiles"'>
-    <meta name="author" content="Rodolfo Wilhelmy">
+    <title>Improving and Validating the map every day using open source tools</title>
+    <meta name="description" content="Improving and Validating the map every day using open source tools">
+    <meta name="author" content="Ruben Lopez">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -33,7 +33,9 @@
           <a href="https://twitter.com/mapbox">@mapbox</a> , <a href="https://twitter.com/mapbox">@Rub21tk</a>
         </section>
         <section>
-          <img src="img/satellite-logo.png" style="width: 50%;background: none; border: 0" >
+          <img src="img/Openstreetmap_logo.png" style="width: 30%;background: none; border: 0;float:left;margin-left: 25px;" >
+          <img src="img/mapbx.gif" style="width: 30%;background: none; border: 0;float:left; margin-left: 25px;" >
+          <img src="img/satellite-logo.png" style="width: 30%;background: none; border: 0; float:left; margin-left: 25px;" >
         </section>
         <section style="text-align: left">
           <h2> OpenStreetMap Stats</h2>
@@ -42,6 +44,8 @@
             <li>Number of nodes : 3,610,420,888</li>
             <li>Number of ways : 377,801,220</li>
             <li>Number of relations : 4,591,863</li>
+            <li> <strong>Average active members per day : 4,175</strong></li>
+            <li><strong>Average active members per week: 15,452</strong></li>
           </ul>
         </section>
         <section style="text-align: left">
@@ -85,6 +89,9 @@
           <img src="img/kinks.png" style="background: none; border: 0; " >
         </section>
         <section style="text-align: left">
+          <h2>Why should we validate the map?</h2>
+        </section>
+        <!--         <section style="text-align: left">
           <h2>Types of errors</h2>
           <ul>
             <li>Newbie errors</li>
@@ -92,28 +99,116 @@
             <li>Accidental breakages</li>
             <li>Intentional damage</li>
           </ul>
-        </section>
-
-
+        </section> -->
         <section style="text-align: left">
           <h2>Existing Tools</h2>
           <ul>
-            <li> HDYC: http://hdyc.neis-one.org/</li>
-            <li>License violations</li>
-            <li>Accidental breakages</li>
-            <li>Intentional damage</li>
+            <li>HDYC: <a target="_blank" href="http://hdyc.neis-one.org/">http://hdyc.neis-one.org/</a></li>
+            <li>Whodidit: <a target="_blank" href="http://simon04.dev.openstreetmap.org/whodidit/">http://simon04.dev.openstreetmap.org/whodidit/</a></li>
+            <li>Osmose:<a target="_blank" href="http://osmose.openstreetmap.fr/en/map/">http://osmose.openstreetmap.fr/en/map/</a></li>
+            <li>Keepright: <a target="_blank" href="http://keepright.ipax.at/">http://keepright.ipax.at/</a></li>
+            <li>OSM Inspector: <a target="_blank" href="http://tools.geofabrik.de/osmi/">http://tools.geofabrik.de/osmi/</a></li>
           </ul>
         </section>
-
-       
-Whodidit: http://simon04.dev.openstreetmap.org/whodidit/
-Osmose: http://osmose.openstreetmap.fr/en/map/
-Keepright: http://keepright.ipax.at/
-OSM Inspector http://tools.geofabrik.de/osmi/
-
-
         <section>
-          <h1>FIN</h1>
+          <a target="_blank" href="http://hdyc.neis-one.org/">http://hdyc.neis-one.org/</a>
+          <img src="img/h1.png" style="background: none; border: 0; " >
+        </section>
+        <section>
+          <a target="_blank" href="http://simon04.dev.openstreetmap.org/whodidit/">http://simon04.dev.openstreetmap.org/whodidit/</a>
+          <img src="img/h2.png" style="background: none; border: 0; " >
+        </section>
+        <section>
+          <a target="_blank" href="http://osmose.openstreetmap.fr/en/map/">http://osmose.openstreetmap.fr/en/map/</a>
+          <img src="img/h3.png" style="background: none; border: 0; " >
+        </section>
+        <section>
+          <a target="_blank" href="http://tools.geofabrik.de/osmi/">http://tools.geofabrik.de/osmi/</a>
+          <img src="img/h4.png" style="background: none; border: 0; " >
+        </section>
+        <section style="text-align: left">
+          <h2>Mapbox</h2>
+          <ul>
+            <li>We update our global maps in real-time from OpenStreetMap.</li>
+            <li>We provide directions based on OpenStreetMap data.</li>
+            <li>Breakages in OpenStreetMap result in broken maps for millions of our end-users.</li>
+          </ul>
+        </section>
+        <section>
+          <img src="img/phone2.png" style=" width: 75%; background: none; border: 0; " >
+        </section>
+        <section>
+          <img src="img/clientes-mapbox.png" style="background: none; border: 0; " >
+        </section>
+        <section style="text-align: left">
+          <h2>Mapbox Approaches</h2>
+          <ul>
+            <li>Based on changeset metadata: Osmcha-Django</li>
+            <li>Daily analyses of QA tiles: OSMLint + To-Fix</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Osmcha-Django</h1>
+        </section>
+        <section>
+          <img src="img/osmcha1.gif" style="width: 75%; background: none; border: 0; " >
+          <a target="_blank" href="https://osmcha.mapbox.com">https://osmcha.mapbox.com</a>
+        </section>
+        <section>
+          <img src="img/osmcha2.gif" style="width: 85%; background: none; border: 0; " >
+        </section>
+        <section>
+          <h2>OSMCHA stats</h2>
+          <ul>
+            <li>Total number of changesets checked: 15,989</li>
+            <li>Total number of harmful changesets found: 924</li>
+            <li>Number of users with harmful changesets: 434</li>
+          </ul>
+        </section>
+        <section>
+          <h1>OSMLint + To-fix</h1>
+        </section>
+        <section>
+          <img src="img/tile-reduce.gif" style="width: 85%; background: none; border: 0; " >
+          <a target="_blank" href="https://github.com/osmlab/osmlint/">https://github.com/osmlab/osmlint/</a>
+          <a target="_blank" href="http://osmlab.github.io/osm-qa-tiles/">http://osmlab.github.io/osm-qa-tiles/</a>
+          <a target="_blank" href="http://osmlab.github.io/osm-qa-tiles/country.html">http://osmlab.github.io/osm-qa-tiles/country.html</a>
+          
+        </section>
+        <section>
+          <img src="img/to-fix-web.gif" style="width: 95%; background: none; border: 0; " >
+        </section>
+        <section>
+          <img src="img/to-fix-plugin.gif" style="width: 95%; background: none; border: 0; " >
+        </section>
+        <section style="text-align: left">
+          <p>Osmlint update to-fix everyday</p>
+        </section>
+        <section>
+          <img src="img/to-fix-stats1.png" style="width: 55%; background: none; border: 0; " >
+        </section>
+        <section>
+          <img src="img/to-fix-stats2.png" style="width: 55%; background: none; border: 0; " >
+        </section>
+        <section style="text-align: left">
+          <h2>Code repositories</h2>
+          <ul>
+            <li>OSMLint: <a href="https://github.com/osmlab/osmlint">https://github.com/osmlab/osmlint</a></li>
+            <li>OSMCha-Django: <a href="https://github.com/willemarcel/osmcha-django">https://github.com/willemarcel/osmcha-django</a></li>
+            <li>Feature compare functions: <a href="https://github.com/mapbox/osm-compare">https://github.com/mapbox/osm-compare</a></li>
+            <li>Changeset visualizer: <a href="https://github.com/osmlab/changeset-map">https://github.com/osmlab/changeset-map</a></li>
+            <li>To-Fix:  <a href="https://github.com/osmlab/to-fix">https://github.com/osmlab/to-fix</a></li>
+          </ul>
+        </section>
+        <section>
+          <img src="img/equipo-de-datos.png" style="width: 110%; background: none; border: 0" >
+          <h2>Mapbox Data-team</h2>
+        </section>
+        <section>
+          <h1>Thank you!</h1>
+          <p>ruben@mapbox.com</p>
+          <a href="https://twitter.com/mapbox">@mapbox</a> , <a href="https://twitter.com/mapbox">@Rub21tk</a>
+          <p>#osm: <a href="https://www.openstreetmap.org/user/Rub21">Rub21</a></p>
         </section>
       </div>
     </div>
